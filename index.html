@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Inator</title>
+</head>
+<body>
+    <!-- Receipt Div -->
+    <div class="receipt">
+        <div class="receiptHeader">
+            <h1>Split Inator</h1>
+            <p>--------------------------------------</p>
+            <p>Split payment easily between your friends / family / etc</p>
+            <p>--------------------------------------</p>
+        </div>
+        <div class="addPersonItems">
+            <div class="addPerson">
+                <p>1.Add person's name</p>
+                <label for="person">
+                    <input type="text" id="person" name="person">
+                </label>
+            </div>
+            <div class="addItems">
+                <p>2.Add item's quantity, name, price that they have ordered</p>
+                <ul>
+                    <li>
+                        <p>Quantity</p>
+                        <label for="quantity">
+                            <input type="text" id="quantity" name="quantity">
+                        </label>
+                    </li>
+                    <li>
+                        <p>Item</p>
+                        <label for="item">
+                            <input type="text" id="item" name="item">
+                        </label>
+                    </li>
+                    <li>
+                        <p>Price</p>
+                        <label for="price">
+                            <input type="text" id="price" name="price">
+                        </label>
+                    </li>
+                </ul>
+                <button class="addItem">Add</button>
+                <button class="addPerson">Add Person to Receipt</button>
+            </div>
+        </div>
+        <div class="orderList">
+            <p>--------------------------------------</p>
+            <p>--------------------------------------</p>
+        </div>
+        <div class="additionalPayments">
+            <p>3.Add additional payments (tax, tip, etc.) (Optional)</p>
+            <ul>
+                <li>
+                    <p>Payment</p>
+                    <label for="payment">
+                        <input type="text" id="payment" name="payment">
+                    </label>
+                </li>
+                <li>
+                    <p>Price</p>
+                    <label for="paymentPrice">
+                        <input type="text" id="paymentPrice" name="paymentPrice">
+                    </label>
+                </li>
+            </ul>
+            <button class="addPayment">Add</button>
+        </div>
+        <p>--------------------------------------</p>
+        <button class="split">Split!</button>
+        <p>--------------------------------------</p>
+    </div>
+</body>
+</html>
